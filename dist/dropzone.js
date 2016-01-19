@@ -946,7 +946,7 @@
       } else if (!Dropzone.isValidFile(file, this.options.acceptedFiles)) {
         return done(this.options.dictInvalidFileType);
       } else if ((this.options.maxFiles != null) && this.getAcceptedFiles().length >= this.options.maxFiles) {
-        done(this.options.dictMaxFilesExceeded.replace("{{maxFiles}}", this.options.maxFiles));
+        //done(this.options.dictMaxFilesExceeded.replace("{{maxFiles}}", this.options.maxFiles));
         return this.emit("maxfilesexceeded", file);
       } else {
         return this.options.accept.call(this, file, done);
