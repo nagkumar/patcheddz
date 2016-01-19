@@ -5,7 +5,7 @@
   "description": "Dropzone is an easy to use drag'n'drop library. It supports image previews and shows nice progress bars.",
   "homepage": "http://www.dropzonejs.com",
   "main": [
-    "dropzone.js",
-    "dropzone.css"
+    "dist/dropzone.js",
+    "dist/dropzone.css"
   ]
 }
