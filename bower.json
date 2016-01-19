@@ -7,5 +7,10 @@
   "main": [
     "dist/dropzone.js",
     "dist/dropzone.css"
+  ],
+  "ignore": [
+    "*",
+    "!dist",
+    "!dist/**/*"
   ]
 }
