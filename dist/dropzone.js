@@ -452,7 +452,6 @@
             var elementOptions, fallback, _ref;
             this.element = element;
             this.version = Dropzone.version;
-            var _this = this;
             this.defaultOptions.previewTemplate = (function () {
                 var k = ((document.getElementsByClassName("previewTemplateCustom")));
                 if (k.length === 0) {
