@@ -421,7 +421,8 @@
             canceledmultiple: noop,
             complete: function (file) {
                 if (file._removeLink) {
-                    file._removeLink.textContent = this.options.dictRemoveFile;
+                    //file._removeLink.textContent = this.options.dictRemoveFile;
+                    file._removeLink = Dropzone.createElement("<button type='button' class='btn btn-default btn-lg'><span class='glyphicon glyphicon-trash' aria-hidden='true'></span></button>");
                 }
                 if (file.previewElement) {
                     return file.previewElement.classList.add("dz-complete");
@@ -452,7 +453,6 @@
             var elementOptions, fallback, _ref;
             this.element = element;
             this.version = Dropzone.version;
-            var _this = this;
             this.defaultOptions.previewTemplate = (function () {
                 var k = ((document.getElementsByClassName("previewTemplateCustom")));
                 if (k.length === 0) {
