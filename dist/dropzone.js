@@ -117,7 +117,7 @@
          */
 
         Dropzone.prototype.events =
-            [   "drop",
+            ["drop",
                 "dragstart",
                 "dragend",
                 "dragenter",
@@ -153,7 +153,7 @@
             withCredentials: false,
             parallelUploads: 2,
             uploadMultiple: false,
-            maxFilesize: 256,
+            maxFilesize: 512,
             paramName: "file",
             createImageThumbnails: true,
             maxThumbnailFilesize: 10,
@@ -447,7 +447,19 @@
             var elementOptions, fallback, _ref;
             this.element = element;
             this.version = Dropzone.version;
-            this.defaultOptions.previewTemplate = this.defaultOptions.previewTemplate.replace(/\n*/g, "");
+            var _this = this;
+            this.defaultOptions.previewTemplate = (function () {
+                var k = ((document.getElementsByClassName("previewTemplateOrg")));
+                if (k.length === 0) {
+                    k = this.defaultOptions.previewTemplate;
+                }
+                else {
+                    k = k[0].innerHTML;
+                }
+
+                return k.replace(/\n*/g, "");
+            }).call(this);
+
             this.clickableElements = [];
             this.listeners = [];
             this.files = [];
