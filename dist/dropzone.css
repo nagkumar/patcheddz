@@ -257,7 +257,7 @@
     display: table;
     vertical-align: top;
     margin: 16px;
-    min-height: 100px;
+    min-height: 50px;
 }
 
 .dropzone .dz-preview:hover {
@@ -445,11 +445,7 @@
     pointer-events: none;
     position: absolute;
     height: 16px;
-    left: 50%;
-    top: 50%;
-    margin-top: -8px;
     width: 80px;
-    margin-left: -40px;
     background: black;
     -webkit-transform: scale(1);
     border-radius: 8px;
