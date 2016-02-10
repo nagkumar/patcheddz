@@ -450,15 +450,14 @@
     margin-top: -8px;
     width: 80px;
     margin-left: -40px;
-    background: rgba(255, 255, 255, 0.9);
+    background: black;
     -webkit-transform: scale(1);
     border-radius: 8px;
     overflow: hidden;
 }
 
 .dropzone .dz-preview .dz-progress .dz-upload {
-    background: #333;
-    background: linear-gradient(to bottom, #666, #444);
+    background: blue;
     position: absolute;
     top: 0;
     left: 0;
