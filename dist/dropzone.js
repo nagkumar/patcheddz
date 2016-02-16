@@ -421,7 +421,6 @@
             canceledmultiple: noop,
             complete: function (file) {
                 if (file._removeLink) {
-                    //file._removeLink.innerHTML = this.options.dictRemoveFile;
                     file._removeLink.innerHTML = "<button type='button' class='btn btn-default btn-lg'><span class='glyphicon glyphicon-trash' aria-hidden='true'></span></button>";
                 }
                 if (file.previewElement) {
