@@ -430,11 +430,11 @@
     transition: opacity 0.4s ease-in;
 }
 
-.dz-preview .col-sm-2 .hide{
+.xyz{
     opacity: 0;
 }
 
-.dz-preview.dz-complete .col-sm-2 .hide{
+.dz-preview.dz-complete .xyz{
     opacity: 1;
 }
 
