@@ -452,8 +452,7 @@
     pointer-events: none;
     position: absolute;
     height: 16px;
-    width: 200%;
-    left: -300px;
+    width: 300%;
     background: black;
     -webkit-transform: scale(1);
     border-radius: 8px;
